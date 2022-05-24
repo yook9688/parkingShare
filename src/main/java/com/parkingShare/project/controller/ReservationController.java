@@ -1,4 +1,4 @@
-package com.parkingShare.controller;
+package com.parkingShare.project.controller;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.parkingShare.service.ReservationService;
-import com.parkingShare.vo.ReservationVO;
+import com.parkingShare.project.service.ReservationService;
+import com.parkingShare.project.vo.ReservationVO;
 
 @Controller
 public class ReservationController {

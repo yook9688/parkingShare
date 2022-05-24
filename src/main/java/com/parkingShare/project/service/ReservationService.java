@@ -1,13 +1,13 @@
-package com.parkingShare.dao;
+package com.parkingShare.project.service;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.parkingShare.vo.ReservationVO;
+import com.parkingShare.project.vo.ReservationVO;
 
 @Mapper
-public interface ReservationMapper {
+public interface ReservationService {
 
 	//예약 목록
 	List<ReservationVO> selectReservationList() throws Exception;

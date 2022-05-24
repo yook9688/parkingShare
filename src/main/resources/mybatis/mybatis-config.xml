@@ -3,10 +3,10 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias alias="ParkingAreaVO" type="com.parkingShare.vo.ParkingAreaVO" />
-		<typeAlias alias="UserVO" type="com.parkingShare.vo.UserVO"/>
-		<typeAlias alias="ReservationVO" type="com.parkingShare.vo.ReservationVO"/>
-		<typeAlias alias="ChattingVO" type="com.parkingShare.vo.ChattingVO"/>
+		<typeAlias alias="ParkingAreaVO" type="com.parkingShare.project.vo.ParkingAreaVO" />
+		<typeAlias alias="UserVO" type="com.parkingShare.project.vo.UserVO"/>
+		<typeAlias alias="ReservationVO" type="com.parkingShare.project.vo.ReservationVO"/>
+		<typeAlias alias="ChattingVO" type="com.parkingShare.project.vo.ChattingVO"/>
 	</typeAliases>
 	<mappers>
 		<package name="mybatis/mapper/*.xml"/>

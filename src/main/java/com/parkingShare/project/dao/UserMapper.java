@@ -1,8 +1,8 @@
-package com.parkingShare.dao;
+package com.parkingShare.project.dao;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.parkingShare.vo.UserVO;
+import com.parkingShare.project.vo.UserVO;
 
 @Mapper
 public interface UserMapper {

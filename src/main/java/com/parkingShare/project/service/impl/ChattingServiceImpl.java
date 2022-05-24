@@ -1,13 +1,13 @@
-package com.parkingShare.service.impl;
+package com.parkingShare.project.service.impl;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.parkingShare.dao.ChattingMapper;
-import com.parkingShare.service.ChattingService;
-import com.parkingShare.vo.ChattingVO;
+import com.parkingShare.project.dao.ChattingMapper;
+import com.parkingShare.project.service.ChattingService;
+import com.parkingShare.project.vo.ChattingVO;
 
 @Service
 public class ChattingServiceImpl implements ChattingService {

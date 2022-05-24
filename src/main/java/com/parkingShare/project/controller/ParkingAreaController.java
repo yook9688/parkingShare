@@ -1,4 +1,4 @@
-package com.parkingShare.controller;
+package com.parkingShare.project.controller;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import com.parkingShare.service.ParkingAreaService;
-import com.parkingShare.vo.ParkingAreaVO;
+import com.parkingShare.project.service.ParkingAreaService;
+import com.parkingShare.project.vo.ParkingAreaVO;
 
 @Controller
 public class ParkingAreaController {

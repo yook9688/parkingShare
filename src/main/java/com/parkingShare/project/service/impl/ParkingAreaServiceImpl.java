@@ -1,13 +1,13 @@
-package com.parkingShare.service.impl;
+package com.parkingShare.project.service.impl;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.parkingShare.dao.ParkingAreaMapper;
-import com.parkingShare.service.ParkingAreaService;
-import com.parkingShare.vo.ParkingAreaVO;
+import com.parkingShare.project.dao.ParkingAreaMapper;
+import com.parkingShare.project.service.ParkingAreaService;
+import com.parkingShare.project.vo.ParkingAreaVO;
 
 @Service
 public class ParkingAreaServiceImpl implements ParkingAreaService {

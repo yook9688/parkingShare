@@ -1,11 +1,11 @@
-package com.parkingShare.service.impl;
+package com.parkingShare.project.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.parkingShare.dao.UserMapper;
-import com.parkingShare.service.UserService;
-import com.parkingShare.vo.UserVO;
+import com.parkingShare.project.dao.UserMapper;
+import com.parkingShare.project.service.UserService;
+import com.parkingShare.project.vo.UserVO;
 
 @Service
 public class UserServiceImpl implements UserService {

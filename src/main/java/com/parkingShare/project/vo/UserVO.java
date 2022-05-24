@@ -1,4 +1,4 @@
-package com.parkingShare.vo;
+package com.parkingShare.project.vo;
 
 import org.apache.ibatis.type.Alias;
 

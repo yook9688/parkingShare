@@ -1,14 +1,14 @@
-package com.parkingShare.dao;
+package com.parkingShare.project.service;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.parkingShare.vo.ChattingVO;
-import com.parkingShare.vo.ParkingAreaVO;
+import com.parkingShare.project.vo.ChattingVO;
+import com.parkingShare.project.vo.ParkingAreaVO;
 
 @Mapper
-public interface ChattingMapper {
+public interface ChattingService {
 
 	//채팅방 목록
 	List<ChattingVO> selectChattingroomList(ChattingVO chattingVO) throws Exception;
