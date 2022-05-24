@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.parkingShare.dao.ParkingAreaMapper">
+
+  <select id="selectParkingAreaList" resultType="ParkingAreaVO">
+    SELECT *
+   	FROM PARKING_AREA
+  </select>
+  
+  <select id="selectParkingAreaDetail" parameterType="ParkingAreaVO" resultType="ParkingAreaVO">
+    SELECT * 
+    FROM PARKING_AREA
+    WHERE AREA_IDX = #{areaIdx}
+  </select>
+  
+  <update id="updateAreaStatement" parameterType="ParkingAreaVO">
+  	UPDATE INTO PARKING_AREA
+  	SET AREA_STATEMENT = #{areaStatement}
+  	WHERE AREA_IDX = #{areaIdx}
+  </update>
+  
+<!--   <insert id="insertParkingArea" parameterType="PakringAreaVO">
+  	INSERT INTO PARKING_AREA
+  	SET LATITUDE = #{latitude},
+  		LONGITUDE = #{longitude},
+  		PARKING_START_TIME = #{parkingStartTime},
+  		PARKING_END_TIME = #{parkingEndTime},
+  		PARKING_START_DATE = #{parkingStartDate},
+  		PARKING_END_DATE = #{parkingEndDate}
+  </insert>
+  
+  <update id="updateParkingArea" parameterType="PakringAreaVO">
+  
+  </update>
+  
+  <delete id="deleteParkingArea" parameterType="PakringAreaVO">
+  
+  </delete> -->
+
+</mapper>
