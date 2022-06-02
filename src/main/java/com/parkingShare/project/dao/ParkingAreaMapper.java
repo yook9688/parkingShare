@@ -15,6 +15,12 @@ public interface ParkingAreaMapper {
 	//주차구역 상세보기
 	ParkingAreaVO selectParkingAreaDetail(ParkingAreaVO parkingAreaVO) throws Exception;
 	
+	//주차구역 추가
+	int insertParkingArea(ParkingAreaVO parkingAreaVO) throws Exception;
+	
+	//주차구역 수정
+	int updateParkingArea(ParkingAreaVO parkingAreaVO) throws Exception;
+	
 	//주차구역 상태변경
 	int updateParkingAreaStatement(ParkingAreaVO parkingAreaVO) throws Exception;
 }

@@ -14,5 +14,11 @@ public interface ReservationMapper {
 	
 	//예약 상세보기
 	ReservationVO selectReservationDetail(ReservationVO reservationVO) throws Exception;
+	
+	//예약 등록
+	int insertReservation(ReservationVO reservationVO) throws Exception;
+	
+	//예약 삭제
+	int deleteReservation(ReservationVO reservationVO) throws Exception;
 }
 

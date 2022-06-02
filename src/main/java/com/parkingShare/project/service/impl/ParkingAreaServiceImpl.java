@@ -33,6 +33,27 @@ public class ParkingAreaServiceImpl implements ParkingAreaService {
 		return parkingAreaMapper.selectParkingAreaDetail(parkingAreaVO);
 	}
 	
+	
+	/**
+	 * 주차구역 추가
+	 * 
+	 */
+	@Override
+	public int insertParkingArea(ParkingAreaVO parkingAreaVO) throws Exception {
+		
+		return parkingAreaMapper.insertParkingArea(parkingAreaVO);
+	}
+	
+	/**
+	 * 주차구역 수정
+	 * 
+	 */
+	@Override
+	public int updateParkingArea(ParkingAreaVO parkingAreaVO) throws Exception {
+		
+		return parkingAreaMapper.updateParkingArea(parkingAreaVO);
+	}
+
 	/**
 	 * 주차구역 상태변경
 	 * 

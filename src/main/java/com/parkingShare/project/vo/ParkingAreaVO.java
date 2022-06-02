@@ -7,7 +7,7 @@ public class ParkingAreaVO {
 
 	private int areaIdx;
 	private double latitude;
-	private double lognitude;
+	private double longitude;
 	private String parkingStartTime;
 	private String parkingEndTime;
 	private String parkingStartDate;
@@ -27,11 +27,11 @@ public class ParkingAreaVO {
 	public void setLatitude(double latitude) {
 		this.latitude = latitude;
 	}
-	public double getLognitude() {
-		return lognitude;
+	public double getLongitude() {
+		return longitude;
 	}
-	public void setLognitude(double lognitude) {
-		this.lognitude = lognitude;
+	public void setLongitude(double longitude) {
+		this.longitude = longitude;
 	}
 	public String getParkingStartTime() {
 		return parkingStartTime;

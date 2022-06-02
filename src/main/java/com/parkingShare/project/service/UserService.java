@@ -1,10 +1,7 @@
 package com.parkingShare.project.service;
 
-import org.apache.ibatis.annotations.Mapper;
-
 import com.parkingShare.project.vo.UserVO;
 
-@Mapper
 public interface UserService {
 	
 	//사용자 정보조회

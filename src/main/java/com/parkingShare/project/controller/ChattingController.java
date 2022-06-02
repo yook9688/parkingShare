@@ -15,13 +15,13 @@ public class ChattingController {
 	@Autowired
 	ChattingService chattingService;
 	
-	@PostMapping(value = "chatting/roomList.do")
+	@PostMapping(value = "/chatting/roomList.do")
 	public List<ChattingVO> selectChattingroomList(ChattingVO chattingVO) throws Exception {
 		
 		return chattingService.selectChattingroomList(chattingVO);
 	}
 	
-	@PostMapping(value = "chatting/List.do")
+	@PostMapping(value = "/chatting/List.do")
 	public List<ChattingVO> selectChattingList(ChattingVO chattingVO) throws Exception {
 		
 		return chattingService.selectChattingList(chattingVO);

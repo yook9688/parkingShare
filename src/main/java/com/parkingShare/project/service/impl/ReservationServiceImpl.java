@@ -32,6 +32,26 @@ public class ReservationServiceImpl implements ReservationService {
 	public ReservationVO selectReservationDetail(ReservationVO reservationVO) throws Exception {
 		return reservationMapper.selectReservationDetail(reservationVO);
 	}
+	
+	/**
+	 * 예약 등록
+	 * 
+	 */
+	@Override
+	public int insertReservation(ReservationVO reservationVO) throws Exception {
+		return reservationMapper.insertReservation(reservationVO);
+	}
+
+	/**
+	 * 예약 삭제
+	 * 
+	 */
+	@Override
+	public int deleteReservation(ReservationVO reservationVO) throws Exception {
+		return reservationMapper.deleteReservation(reservationVO);
+	}
+	
+	
 
 	
 }

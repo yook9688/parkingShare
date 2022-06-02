@@ -15,15 +15,27 @@ public class ReservationController {
 	@Autowired
 	ReservationService reservationService;
 	
-	@PostMapping(value = "reservattion/reservationList.do")
+	@PostMapping(value = "/reservattion/reservationList.do")
 	public List<ReservationVO> selectReservationList(ReservationVO reservationVO) throws Exception {
 		
 		return reservationService.selectReservationList();
 	}
 	
-	@PostMapping(value = "reservattion/reservationDetail.do")
+	@PostMapping(value = "/reservattion/reservationDetail.do")
 	public ReservationVO selectReservationInfo(ReservationVO reservationVO) throws Exception {
 		
 		return reservationService.selectReservationDetail(reservationVO);
+	}
+	
+	@PostMapping(value = "/reservattion/insertReservation.do")
+	public int insertReservation(ReservationVO reservationVO) throws Exception {
+		
+		return reservationService.insertReservation(reservationVO);
+	}
+	
+	@PostMapping(value = "/reservattion/deleteReservation.do")
+	public int deleteReservation(ReservationVO reservationVO) throws Exception {
+		
+		return reservationService.deleteReservation(reservationVO);
 	}
 }

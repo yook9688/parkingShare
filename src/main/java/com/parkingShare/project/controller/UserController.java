@@ -3,36 +3,39 @@ package com.parkingShare.project.controller;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.parkingShare.project.service.UserService;
 import com.parkingShare.project.vo.UserVO;
 
-@Controller
+@RestController
 public class UserController {
 
 	@Autowired
 	UserService userService;
 	
 	@RequestMapping("/home")
-	public UserVO home(@RequestBody UserVO userInfo, UserVO userVO, HttpSession session) throws Exception {
+	public String home(@RequestBody UserVO userInfo, UserVO userVO, HttpSession session) throws Exception {
 		
 		String userHp = userInfo.getUserHp();
 		
+		
 		userVO.setUserHp(userHp);
+		UserVO checkUser = userService.selectUserInfo(userVO);
 		
-		userVO = userService.selectUserInfo(userVO);
-		
-		if(userVO.getUserIdx() == 0) {
+		if(checkUser == null) {
+			String userType = userInfo.getUserType();
+			userVO.setUserType(userType);
 			userService.insertUser(userVO);
 			userVO = userService.selectUserInfo(userVO);
 		}
 		
 		session.setAttribute("user", userVO);
 		
-		return userVO;
+		return "index.html";
+		
 	}
 	
 	@RequestMapping("/")
